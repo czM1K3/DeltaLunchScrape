@@ -25,10 +25,10 @@ class handler(BaseHTTPRequestHandler):
         for child in root:
             if child.tag != 'pomjidelnic_xmljidelnic':
                 continue
-            day = next((x for x in array if x["year"] == child[0].text), None)
+            day = next((x for x in array if x["date"] == child[0].text), None)
             if day is None:
                 array.append({
-                    'year': child[0].text,
+                    'date': child[0].text,
                     'soup': None,
                     'lunch1': None,
                     'lunch2': None,
