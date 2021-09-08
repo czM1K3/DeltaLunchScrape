@@ -1,5 +1,4 @@
 from http.server import BaseHTTPRequestHandler
-from cowpy import cow
 import xml.etree.ElementTree as ET
 import json
 import socket
